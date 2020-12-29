@@ -1,0 +1,230 @@
+/* Css global*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    min-width: 100%;
+    padding: 4px 4px 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    margin-top: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: bisque;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* fin css global*/
+
+
+/*header*/
+
+nav {
+    background-color: bisque;
+    position: sticky;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 30px;
+    padding: 1rem;
+}
+
+li a {
+    display: block;
+    text-align: center;
+}
+
+.active {
+    color: hsl(15, 72%, 70%);
+}
+
+
+/*Fin header*/
+
+
+/*
+li a:hover:not(.active) {
+    color: #111;
+}
+*/
+
+
+/*
+a:visited {
+    color: #111;
+}*/
+
+
+/*page acceuil*/
+
+table {
+    width: 80%;
+    height: 700px;
+    align-items: center;
+    padding-left: 5%;
+    margin-left: 7%;
+}
+
+.profile {
+    color: hsl(15, 72%, 70%);
+    width: 30%;
+    background-color: antiquewhite;
+    padding: 0 5% 0 5%;
+    font-size: 20px;
+}
+
+.resume {
+    width: 50%;
+    background-color: beige;
+    padding: 15px 5% 15px 5%;
+}
+
+img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.info {
+    padding: 3px;
+}
+
+.info a {
+    color: hsl(15, 72%, 70%);
+}
+
+h1,
+h2,
+h3 {
+    color: hsl(15, 72%, 70%);
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.resume h2,
+h3,
+h5 {
+    padding: 4px;
+    color: hsl(15, 72%, 70%);
+    text-align: start;
+}
+
+.resume h3,
+h5 {
+    padding-top: 8px;
+}
+
+
+/*loisir page*/
+
+.wrapper h1 {
+    padding-top: 50px;
+}
+
+.wrapper .loisir {
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    list-style-type: circle;
+}
+
+
+/* fin losir page*/
+
+
+/*about page*/
+
+.about {
+    padding: 20px;
+    text-align: center;
+}
+
+
+/*Contact page*/
+
+.contact {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contact h3 {
+    text-align: center;
+}
+
+label {
+    font-size: 1.1rem;
+}
+
+input {
+    height: 40px;
+    width: 450px;
+}
+
+.btnEnvoyer {
+    background-color: hsl(15, 72%, 70%);
+    font-size: 1.3rem;
+    ;
+}
+
+.btnEnvoyer:hover {
+    background-color: bisque;
+}
+
+textarea {
+    height: 75px;
+    width: 450px;
+}
+
+@media all and (max-width: 1000px)
+{
+    .navbar li {
+    font-size: 15px;
+}
+    .profile {
+    font-size: 10px;
+    padding: 0 2% 0 2%;
+    }
+
+    .resume {
+     padding: 15px 2% 15px 2%;
+    }
+
+}
+@media all and (max-width: 500px)
+{
+    .navbar li {
+    padding: 0.5rem;
+    }
+    table {
+    margin-left: 2%;
+    }
+}
